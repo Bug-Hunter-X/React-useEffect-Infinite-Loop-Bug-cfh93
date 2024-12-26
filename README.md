@@ -1,0 +1,3 @@
+# React useEffect Infinite Loop
+This example demonstrates a common React bug where an infinite loop is caused by an improper use of the useEffect hook.
+The bug occurs when the state variable updated within the useEffect hook is also included in the useEffect's dependency array. This creates a cycle where the state variable keeps changing, causing the useEffect to run repeatedly and without ending, leading to an infinite loop.
